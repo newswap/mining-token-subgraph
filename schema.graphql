@@ -1,0 +1,36 @@
+type TokenMineFactory @entity {
+  # factory address
+  id: ID!
+}
+
+type TokenMine @entity {
+  # tokenMine address
+  id: ID!
+
+  owner: Bytes!
+  name: String!
+  stakingToken: Bytes!
+  rewardsToken: Bytes!
+  startBlock: BigInt!
+  endBlock: BigInt!
+  rewardAmount: BigInt!
+
+  stakingTokenSymbol: String!
+  stakingTokenName: String!
+  stakingTokenDecimals: BigInt!
+  rewardsTokenSymbol: String!
+  rewardsTokenName: String!
+  rewardsTokenDecimals: BigInt!
+
+  isStakingLPToken: Boolean!
+  token0Symbol: String!
+  token0Name: String!
+  token0Decimals: BigInt!
+  token1Symbol: String!
+  token1Name: String!
+  token1Decimals: BigInt!
+
+  # creation stats
+  createdAtTimestamp: BigInt!
+  createdAtBlockNumber: BigInt!
+}

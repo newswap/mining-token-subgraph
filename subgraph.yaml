@@ -1,0 +1,37 @@
+specVersion: 0.0.2
+description: MiningToken is a decentralized protocol for user-defined mining on NewChain.
+repository: https://github.com/newswap/mining-token-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Factory
+    # testnet/mainnet
+    network: testnet   
+    # testnet: 0x55090157f082b48317e76c7E845987dDa168cBce  startBlock: 1037650 
+    # mainnet: ?  startBlock: ?
+    source:
+      address: '0x55090157f082b48317e76c7E845987dDa168cBce'
+      abi: Factory
+      startBlock: 1037650
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.3
+      language: wasm/assemblyscript
+      file: ./src/mappings/factory.ts
+      entities:
+        - TokenMine
+      abis:
+        - name: Factory
+          file: ./abis/factory.json
+        - name: Pair
+          file: ./abis/pair.json
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: ERC20SymbolBytes
+          file: ./abis/ERC20SymbolBytes.json
+        - name: ERC20NameBytes
+          file: ./abis/ERC20NameBytes.json
+      eventHandlers:
+        - event: Deploy(address,address,string,address,address,uint256,uint256,uint256,bool)
+          handler: handleNewTokenMine
