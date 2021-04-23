@@ -22,7 +22,7 @@ export function handleNewTokenMine(event: Deploy): void {
   // factory.pairCount = factory.pairCount + 1
   // factory.save()
 
-  // log.info("\n\n============LOG=======================\n\n handleNewTokenMine",[])
+  // log.info("\n\n============LOG=======================\n\n handleNewTokenMine" + event.params.tokenMineAddress.toHexString(),[])
 
   let tokenMine = new TokenMine(event.params.tokenMineAddress.toHexString()) as TokenMine
   tokenMine.owner = event.params.owner
@@ -63,6 +63,7 @@ export function handleNewTokenMine(event: Deploy): void {
       // log.debug('========\n\n\n ======== mybug the address on token0 was null', [])
       return      
     }
+    tokenMine.token0Address = token0Address
     tokenMine.token0Symbol = fetchTokenSymbol(token0Address)
     tokenMine.token0Name = fetchTokenName(token0Address)
     let token0Decimals = fetchTokenDecimals(token0Address)
@@ -78,6 +79,7 @@ export function handleNewTokenMine(event: Deploy): void {
       log.debug('mybug the address on token1 was null', [])
       return      
     }
+    tokenMine.token1Address = token1Address
     tokenMine.token1Symbol = fetchTokenSymbol(token1Address)
     tokenMine.token1Name = fetchTokenName(token1Address)
     let token1Decimals = fetchTokenDecimals(token1Address)

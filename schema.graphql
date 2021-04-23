@@ -23,12 +23,14 @@ type TokenMine @entity {
   rewardsTokenDecimals: BigInt!
 
   isStakingLPToken: Boolean!
-  token0Symbol: String!
-  token0Name: String!
-  token0Decimals: BigInt!
-  token1Symbol: String!
-  token1Name: String!
-  token1Decimals: BigInt!
+  token0Address: Bytes
+  token0Symbol: String
+  token0Name: String
+  token0Decimals: BigInt
+  token1Address: Bytes
+  token1Symbol: String
+  token1Name: String
+  token1Decimals: BigInt
 
   # creation stats
   createdAtTimestamp: BigInt!
