@@ -51,13 +51,13 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "startBlock",
+        "name": "startTime",
         "type": "uint256"
       },
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "endBlock",
+        "name": "endTime",
         "type": "uint256"
       },
       {
@@ -106,8 +106,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [],
@@ -120,8 +119,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [],
@@ -134,8 +132,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [],
@@ -148,8 +145,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [],
@@ -169,8 +165,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [],
@@ -183,8 +178,7 @@
       }
     ],
     "stateMutability": "view",
-    "type": "function",
-    "constant": true
+    "type": "function"
   },
   {
     "inputs": [
@@ -270,12 +264,12 @@
       },
       {
         "internalType": "uint256",
-        "name": "_startBlock",
+        "name": "_startTime",
         "type": "uint256"
       },
       {
         "internalType": "uint256",
-        "name": "_endBlock",
+        "name": "_endTime",
         "type": "uint256"
       },
       {
@@ -298,7 +292,6 @@
       }
     ],
     "stateMutability": "payable",
-    "type": "function",
-    "payable": true
+    "type": "function"
   }
 ]

@@ -11,8 +11,8 @@ type TokenMine @entity {
   name: String!
   stakingToken: Bytes!
   rewardsToken: Bytes!
-  startBlock: BigInt!
-  endBlock: BigInt!
+  startTime: BigInt!
+  endTime: BigInt!
   rewardAmount: BigInt!
 
   stakingTokenSymbol: String!

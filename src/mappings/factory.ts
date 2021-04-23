@@ -29,8 +29,8 @@ export function handleNewTokenMine(event: Deploy): void {
   tokenMine.name = event.params.name
   tokenMine.stakingToken = event.params.stakingToken
   tokenMine.rewardsToken = event.params.rewardsToken
-  tokenMine.startBlock = event.params.startBlock
-  tokenMine.endBlock = event.params.endBlock
+  tokenMine.startTime = event.params.startTime
+  tokenMine.endTime = event.params.endTime
   tokenMine.rewardAmount = event.params.rewardAmount
   tokenMine.isStakingLPToken = event.params.isStakingLPToken
   tokenMine.createdAtTimestamp = event.block.timestamp
