@@ -8,12 +8,12 @@ dataSources:
     name: Factory
     # testnet/mainnet
     network: testnet   
-    # testnet: 0xEfbf89275C87B918FB728163e756Fe8043185105  startBlock: 2101900
+    # testnet: 0xb4B65e635944a2A8AF71477b6d44aCfFC054Bf8E  startBlock: 2187976
     # mainnet: ?  startBlock: ?
     source:
-      address: '0xEfbf89275C87B918FB728163e756Fe8043185105'
+      address: '0xb4B65e635944a2A8AF71477b6d44aCfFC054Bf8E'
       abi: Factory
-      startBlock: 2101900
+      startBlock: 2187900
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
