@@ -7,13 +7,13 @@ dataSources:
   - kind: ethereum/contract
     name: Factory
     # testnet/mainnet
-    network: testnet   
+    network: mainnet   
     # testnet: 0x88E7cC45e594e2Efd93DbC65e5859DceB6079795  startBlock: 2191771
-    # mainnet: ?  startBlock: ?
+    # mainnet: 0x72b1ac9A97CC37c7abf76d8617eB485F2248EeBA  startBlock: 25779316
     source:
-      address: '0x88E7cC45e594e2Efd93DbC65e5859DceB6079795'
+      address: '0x72b1ac9A97CC37c7abf76d8617eB485F2248EeBA'
       abi: Factory
-      startBlock: 2191771
+      startBlock: 25779316
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
