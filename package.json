@@ -8,7 +8,10 @@
     "build": "graph build",
     "create-local": "graph create newton/miningToken --node http://127.0.0.1:8020",
     "remove-local": "graph remove newton/miningToken --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy newton/miningToken --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy-local": "graph deploy newton/miningToken --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "create-v2-local": "graph create newton/miningTokenV2 --node http://127.0.0.1:8020",
+    "remove-v2-local": "graph remove newton/miningTokenV2 --node http://127.0.0.1:8020",
+    "deploy-v2-local": "graph deploy newton/miningTokenV2 --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.16.0",
